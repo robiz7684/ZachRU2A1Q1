@@ -1,0 +1,46 @@
+/*Unit 2, Assignment 1, Question 1
+*Zach Robinson
+*Date Started : 1/04/19
+*For: Ms. Harris and ICS4UI
+*Placing the ratings of 5 movies into a dictionary. Allows the user to search through the dictionary to find the movies.
+*/
+
+//Variables
+var guess = ""
+var answer = "yes"
+var movies = ["captain marvel" : 7.2, "avengers: infinity war" : 8.5, "black panther" : 7.3, "thor: ragnarok" : 7.9, "spider-man: homecoming" : 7.5] 
+
+while answer.lowercased() == "yes" {
+  print ("\nPlease enter a Marvel movie you would like to see the rating of:")
+  guess = readLine()!
+
+  if guess.lowercased() == "captain marvel" {
+    print ("\nThe rating of \(guess) is \(movies["captain marvel"]!)/10")
+    print ("\n Do you want to see another movie rating?")
+    answer = readLine()!
+
+  } else if guess.lowercased() == "avengers: infinity war" {
+    print ("\nThe rating of \(guess) is \(movies["avengers: infinity war"]!)/10")
+    print ("\n Do you want to see another movie rating?")
+    answer = readLine()!
+
+  }  else if guess.lowercased() == "black panther" {
+    print ("\nThe rating of \(guess) is \(movies["black panther"]!)/10")
+    print ("\n Do you want to see another movie rating?")
+    answer = readLine()!
+
+  } else if guess.lowercased() == "thor: ragnarok" {
+    print ("\nThe rating of \(guess) is \(movies["thor: ragnarok"]!)/10")
+    print ("\n Do you want to see another movie rating?")
+    answer = readLine()!
+
+  } else if guess.lowercased() == "spider-man: homecoming" {
+    print ("\nThe rating of \(guess) is \(movies["spider-man: homecoming"]!)/10")
+    print ("\n Do you want to see another movie rating?")
+    answer = readLine()!
+
+  }else {
+    print ("\nSorry, that is not an available movie. Do you want to try again?")
+    answer = readLine()!
+  }
+}
